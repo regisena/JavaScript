@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // var = variável global
+
+        var nome = "Reginaldo";
+        console.log(nome);
+
+        // let = variável no escopo
+
+        {
+            let idade = 47;
+        }
+        // exemplo fora do escopo
+        //console.log(idade);// Uncaught ReferenceError: idade is not defined
+
+        // exemplo dentro do escopo
+        {
+            let idadeReginaldo = 48;
+            console.log(idadeReginaldo);
+        }
+
+        // const = constante
+
+        const nomeC = "Regi";
+
+        //nomeC = "Antonella"; // aula02.html:34 Uncaught TypeError: Assignment to constant variable.
+
+        console.log(nomeC);
+    </script>
+
+</body>
+</html>
