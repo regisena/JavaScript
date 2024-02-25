@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Funções
+        testes(); // primeira vez
+        // Função sem parâmetros
+        function testes(){
+            // Aqui abaixo será executado quando chamar a função.
+
+            console.log("chamando a função testes");
+        }
+        testes(); // segunda vez
+        console.log("=-----------------------=");
+
+        // Função com parâmetros
+        function testes1(nome, idade){
+            console.log("O nome passado é: "+nome);
+            console.log("Idade: "+idade);
+            console.log("=-----------------------=");
+        }
+
+        testes1("Reginaldo", 47);
+        testes1("Antonella", 4);
+
+        function pegarNome(){
+            return "Reginaldo Sena";
+        }
+
+        var nome = pegarNome();
+        console.log(nome);
+
+    </script>
+
+</body>
+</html>
