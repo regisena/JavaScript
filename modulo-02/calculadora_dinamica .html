@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       var numero1 = prompt("Informe o primeiro número: ");
+
+        while(numero1 <= 0 ){
+            alert("Favor informar um número maior que zero!" + numero1);
+            numero1 = prompt("Informe o primeiro número: ");
+        }
+
+        var tipoOperacao = prompt("Informe o tipo de operação (+,-,*,/): ");
+
+        while(tipoOperacao != "+" && tipoOperacao != "-" && tipoOperacao != "*" && tipoOperacao != "/"){
+            alert("Tipo de operação inválida, favor informar um tipo correto.");
+            tipoOperacao = prompt("Informe o tipo de operação ( + , - , * , / ): ");
+        }
+
+        var numero2 = prompt("Informe o segundo número: ");
+
+        while(numero2 <= 0){
+            alert("Favor informar um número maior que zero! "+numero2);
+            numero2 = prompt("Informe o segundo número: ");
+        }
+
+        calculadora = 0;
+        operacao = "";
+
+        numero1 = parseInt(numero1);
+        numero2 = parseInt(numero2);
+
+        if(tipoOperacao == "+"){
+            calculadora = numero1 + numero2;
+            operacao = "soma";
+        }else if(tipoOperacao == "-"){
+            calculadora = numero1 - numero2;
+            operacao = "subtração";
+        }else if(tipoOperacao == "*"){
+            calculadora = numero1 * numero2;
+            operacao = "multiplicação";
+        }else{
+            calculadora = numero1 / numero2;
+            operacao = "divisão";
+        }
+
+        console.log("A operação escolhida foi: "+ operacao);
+
+        console.log("O cálculo de "+numero1+" e "+numero2+" é ==> "+calculadora);
+
+
+    </script>
+</body>
+</html>

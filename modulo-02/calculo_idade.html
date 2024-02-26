@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //alert("Funcionando!");
+        
+        var mensagem = "";
+        var anoAtual = prompt("Qual o ano atual?");
+
+        while(anoAtual != 2024){
+            alert("Informar o ano atual!");
+            anoAtual = prompt("Qual o ano atual?");
+        }
+
+        var anoNascimento = prompt("Em que ano você nasceu?");
+
+        while(anoNascimento > anoAtual){
+            alert("O ano de nascimento deve ser menor ao ano atual.");
+            anoNascimento = prompt("Em que ano você nasceu?");
+        }
+        
+        var idade = anoAtual - anoNascimento;
+
+        if(idade == 0){
+            mensagem = "Você é um recem-nascido(a). Seja bem-vindo, vc está com "+idade+" ano.";
+        }else if(idade == 1){
+            mensagem = "Você é um bebê. Parabéns, vc está com "+idade+" ano.";
+        }else{
+            mensagem = "Sua idade atual é: "+idade+" anos de idade.";
+        }
+
+        console.log(mensagem);
+
+    </script>
+</body>
+</html>
