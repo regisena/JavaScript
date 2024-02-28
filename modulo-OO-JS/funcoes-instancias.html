@@ -8,13 +8,28 @@
 <body>
     <script>
         //alert("Funcionando!");
-        var pessoa = new Pessoa();
+        /*var pessoa = new Pessoa();
 
         function Pessoa() {
             this.nome = "Reginaldo";
         }
         pessoa.nome = "João";
-        console.log(pessoa.nome);
+        console.log(pessoa.nome);*/
+
+        function Pessoa(){
+            this.nome = "Reginaldo";
+            this.idade = 47;
+            this.printNome = function(){
+                alert(this.nome);
+            }
+        }
+
+        var pessoa = new Pessoa();
+        pessoa.printNome();
+
+
+
+
     </script>
 </body>
 </html>
